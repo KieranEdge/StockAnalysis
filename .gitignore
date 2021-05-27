@@ -20,6 +20,8 @@ parts/
 sdist/
 var/
 wheels/
+External Libraries/
+site-packages/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
