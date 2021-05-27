@@ -1,1 +1,4 @@
 """The purpose of this script is to create the GUI tools for the application"""
+import tkinter as tk
+
+class gui:
