@@ -35,6 +35,7 @@ class InputFrame(tk.Frame):
         # Creating the user button
         button = tk.Button(self, text="Gather Information")
         button.grid(row=2, column=0, columnspan=3)
+        print("application created")
 
 class OutputFrame(tk.Frame):
     def __init__(self, Parent, *args, **kwargs):
@@ -44,6 +45,7 @@ class OutputFrame(tk.Frame):
         # Titling the frame
         Title = tk.Label(self, text="User Inputs", bg="white", fg="blue")
         Title.grid(row=0, column=0, columnspan=3)
+        print("application created")
 
         # Creating the user inputs
         label = tk.Label(self, text="Choose company", bg="white", fg="blue")
