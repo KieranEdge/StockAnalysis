@@ -1,4 +1,23 @@
 """The purpose of this script is to create the GUI tools for the application"""
 import tkinter as tk
 
-class gui:
+class Application(tk.Tk):
+    """Creating the main application class"""
+    def __init__(self, title, dimensions, *args, **kwargs):
+        """Initialising the class and inheriting the key word arguments"""
+        super().__init__(title, dimensions, *args, **kwargs)
+        self.title = title
+        self.size = dimensions
+        self.bg = "white"
+
+class InputFrame(tk.Frame):
+    """Creating the input frame class"""
+    def __init__(self, Parent, *args, **kwargs):
+        """Initialising the class and inheriting the key word arguments"""
+        super().__init__(self, Parent, *args, **kwargs)
+
+        # Titling the frame
+        TitleFrame = tk.Frame(self)
+        TitleFrame.place(relx=0, rely=0, relwidth=1, relheight=0.2)
+        Title = tk.Label(TitleFrame, text="User Inputs", font=("Arial Bold", 20), bg="white", fg="blue")
+        Title.pack()
